@@ -267,6 +267,25 @@
   margin-top: 0;
 }
 
+.window-section a {
+  color: #000080;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.window-section a:hover {
+  color: #0000ff;
+}
+
+.dark-mode .window-section a {
+  color: var(--tron-cyan);
+}
+
+.dark-mode .window-section a:hover {
+  color: var(--tron-cyan);
+  text-shadow: 0 0 4px var(--tron-cyan-glow);
+}
+
 .window-list {
   padding-left: 1.25rem;
   margin: 0.5rem 0 0.75rem;
