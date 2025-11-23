@@ -46,74 +46,6 @@ body {
   font-size: 0.85rem;
 }
 
-.win95-window {
-  position: absolute;
-  background-color: var(--win95-gray);
-  border: 2px solid var(--win95-dark);
-  border-top-color: #fff;
-  border-left-color: #fff;
-  border-right-color: var(--win95-dark);
-  border-bottom-color: var(--win95-dark);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
-  border-radius: 2px;
-  max-width: min(90vw, 480px);
-  cursor: default;
-}
-
-.win95-titlebar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.25rem 0.5rem;
-  background: linear-gradient(90deg, var(--win95-blue), #2b4b9b);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.9rem;
-  user-select: none;
-  cursor: move;
-  touch-action: none;
-}
-
-.win95-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-right: 1rem;
-}
-
-.win95-controls {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.win95-control {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--win95-darker);
-  background: var(--win95-gray);
-  font-size: 0.75rem;
-  line-height: 0.75rem;
-  padding: 0;
-  text-align: center;
-  box-shadow: inset -1px -1px 0 var(--win95-dark), inset 1px 1px 0 var(--win95-highlight);
-}
-
-.win95-control:active {
-  box-shadow: inset 1px 1px 0 var(--win95-dark), inset -1px -1px 0 var(--win95-highlight);
-}
-
-.win95-control--danger {
-  color: #b40000;
-}
-
-.win95-body {
-  padding: 0.75rem 1rem 1rem;
-  background: var(--win95-light);
-  border: 2px solid var(--win95-highlight);
-  border-top-color: #d4d4d4;
-  border-left-color: #d4d4d4;
-}
-
 .taskbar {
   position: fixed;
   left: 0;
@@ -183,22 +115,7 @@ body {
   opacity: 1;
 }
 
-.taskbar__clock {
-  margin-left: auto;
-  padding: 0.25rem 0.6rem;
-  border: 1px solid var(--win95-dark);
-  background: var(--win95-light);
-  font-size: 0.85rem;
-}
-
 @media (max-width: 900px) {
-  .win95-window {
-    position: static;
-    width: auto !important;
-    max-width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
   .desktop {
     padding: 1.5rem 1rem 6rem;
   }

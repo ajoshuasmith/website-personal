@@ -5,8 +5,8 @@ function Contact() {
       <ul className="contact-list">
         <li>
           <span>Email:</span>{' '}
-          <a href="mailto:joshuasmith@am.ne" rel="noopener noreferrer">
-            joshuasmith@am.ne
+          <a href="mailto:inquiry@ajoshuasmith.com" rel="noopener noreferrer">
+            inquiry@ajoshuasmith.com
           </a>
         </li>
         <li>
@@ -21,14 +21,7 @@ function Contact() {
             github.com/ajoshuasmith
           </a>
         </li>
-        <li>
-          <span>LinkedIn:</span>{' '}
-          <a href="https://www.linkedin.com/in/the-joshuasmith/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/the-joshuasmith
-          </a>
-        </li>
       </ul>
-      <small className="contact-note">Employer names intentionally redacted for public portfolio.</small>
     </article>
   )
 }

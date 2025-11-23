@@ -1,6 +1,149 @@
+.browser-window {
+  background: #cfd5d9;
+  border: 2px solid #000;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #3f3f3f;
+  border-bottom-color: #3f3f3f;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+  max-width: 960px;
+  margin: 0 auto 3rem;
+}
+
+.browser-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0.5rem;
+  background: linear-gradient(90deg, #000080, #2b4b9b);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.browser-titlebar__controls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.browser-control {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000;
+  background: #c0c0c0;
+  font-size: 0.75rem;
+  padding: 0;
+  box-shadow: inset -1px -1px 0 #3f3f3f, inset 1px 1px 0 #fff;
+}
+
+.browser-control:active {
+  box-shadow: inset 1px 1px 0 #3f3f3f, inset -1px -1px 0 #fff;
+}
+
+.browser-control--danger {
+  color: #b40000;
+}
+
+.browser-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #dcdcdc;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+.browser-toolbar__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.toolbar-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid #fff;
+  border-right-color: #7b7b7b;
+  border-bottom-color: #7b7b7b;
+  background: #c0c0c0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.toolbar-button:active {
+  border: 2px solid #7b7b7b;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.browser-address {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.browser-address input {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.2rem 0.35rem;
+  border: 2px inset #fff;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.browser-tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.4rem 0.5rem 0;
+  background: #b9bfc4;
+  flex-wrap: wrap;
+}
+
+.browser-tab {
+  padding: 0.35rem 0.75rem;
+  background: #dde1e4;
+  border: 2px solid #fff;
+  border-right-color: #7b7b7b;
+  border-bottom-color: #7b7b7b;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.85rem;
+}
+
+.browser-body {
+  padding: 1rem 1.25rem 1.5rem;
+  background: #f4f4f4;
+  border-top: 2px solid #fff;
+}
+
+.browser-section {
+  background: #fff;
+  border: 1px solid #b5b5b5;
+  box-shadow: inset -1px -1px 0 #d7d7d7, inset 1px 1px 0 #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.browser-section__header {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 0.75rem;
+}
+
+.browser-section__header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
 .window-section {
   font-size: 0.95rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 .window-section p {
@@ -14,15 +157,6 @@
 
 .window-list li {
   margin-bottom: 0.35rem;
-}
-
-.window-highlight {
-  margin-top: 0.75rem;
-  padding: 0.5rem 0.75rem;
-  background: #fff;
-  border: 1px solid #b5b5b5;
-  box-shadow: inset -1px -1px 0 #d7d7d7, inset 1px 1px 0 #fff;
-  font-size: 0.85rem;
 }
 
 .skill-grid {
@@ -87,7 +221,17 @@
   font-weight: 600;
 }
 
-.contact-note {
-  font-size: 0.75rem;
-  color: #444;
+@media (max-width: 768px) {
+  .browser-window {
+    box-shadow: none;
+    border-width: 1px;
+  }
+
+  .browser-toolbar {
+    flex-direction: column;
+  }
+
+  .browser-address {
+    width: 100%;
+  }
 }

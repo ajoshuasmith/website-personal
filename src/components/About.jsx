@@ -11,10 +11,6 @@ function About() {
         <li>Builds and maintains scalable documentation libraries and onboarding playbooks.</li>
         <li>Translates business goals into practical automation, compliance, and security outcomes.</li>
       </ul>
-      <div className="window-highlight">
-        <span>Certifications:</span> Sophos Certified Engineer, Datto, Laserfiche Gold, PaperCut Technical, Cybersecurity
-        Fundamentals.
-      </div>
     </article>
   )
 }
