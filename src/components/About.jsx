@@ -2,15 +2,15 @@ function About() {
   return (
     <article className="window-section">
       <p>
-        Joshua Smith is a Director of Technology, service manager, and senior systems engineer who guides Midwest
-        technology teams through dependable service delivery, process refinement, and secure remote operations.
+        I'm a Director of Technology at a Midwest MSP, reporting to the executive team. I direct technology strategy
+        and delivery, lead service desk and automation teams, and translate business goals into automation, compliance,
+        and security outcomes.
       </p>
-      <ul className="window-list">
-        <li>Directs technology strategy and delivery for a Midwest MSP, reporting into the executive team.</li>
-        <li>Leads service desk, project, and automation teams with a coaching mindset.</li>
-        <li>Builds and maintains scalable documentation libraries and onboarding playbooks.</li>
-        <li>Translates business goals into practical automation, compliance, and security outcomes.</li>
-      </ul>
+      <p>
+        I've built and maintained documentation libraries with over 2,500 artifacts, created onboarding playbooks, and
+        established processes that reduce manual engineer effort across service desks. I focus on blending people,
+        process, and tooling so teams operate with confidence.
+      </p>
     </article>
   )
 }

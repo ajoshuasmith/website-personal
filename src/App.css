@@ -12,6 +12,17 @@
   display: flex;
   flex-direction: column;
   min-height: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-mode .browser-window {
+  background: #2d2d2d;
+  border-color: #4a4a4a;
+  border-top-color: #4a4a4a;
+  border-left-color: #4a4a4a;
+  border-right-color: #1f1f1f;
+  border-bottom-color: #1f1f1f;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .browser-titlebar {
@@ -23,6 +34,11 @@
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.dark-mode .browser-titlebar {
+  background: linear-gradient(90deg, #4a6fa5, #5a7fb5);
 }
 
 .browser-titlebar__controls {
@@ -127,6 +143,12 @@
   border-top: 2px solid #fff;
   overflow-y: auto;
   min-height: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .browser-body {
+  background: #1a1a1a;
+  border-top-color: #3a3a3a;
 }
 
 .browser-section {
@@ -135,6 +157,13 @@
   box-shadow: inset -1px -1px 0 #d7d7d7, inset 1px 1px 0 #fff;
   padding: 1rem;
   margin-bottom: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .browser-section {
+  background: #2d2d2d;
+  border-color: #4a4a4a;
+  color: #e0e0e0;
 }
 
 .browser-section__header {
@@ -145,12 +174,22 @@
 .browser-section__header h2 {
   margin: 0;
   font-size: 1.15rem;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .browser-section__header h2 {
+  color: #e0e0e0;
 }
 
 .window-section {
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .window-section {
+  color: #e0e0e0;
 }
 
 .window-section p {

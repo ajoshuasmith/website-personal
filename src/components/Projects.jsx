@@ -1,32 +1,12 @@
-const PROJECTS = [
-  {
-    name: 'Cloud Workplace Migration',
-    detail:
-      'Guided multiple organizations from legacy Active Directory footprints to cloud-first environments with secure score targets above 750 and remote work readiness.',
-  },
-  {
-    name: 'Hypervisor Modernization',
-    detail: 'Directed cross-platform migrations between VMware, Hyper-V, and open-source stacks with minimal downtime.',
-  },
-  {
-    name: 'Process & Automation Program',
-    detail:
-      'Created a documentation-backed process library (~2.5k artifacts) and automation backlog that reduced manual engineer effort across service desks.',
-  },
-]
-
 function Projects() {
   return (
     <article className="window-section">
-      <p>Recent focus areas that showcase how I combine leadership, documentation, and technical depth.</p>
-      <ul className="project-list">
-        {PROJECTS.map((project) => (
-          <li key={project.name}>
-            <h3>{project.name}</h3>
-            <p>{project.detail}</p>
-          </li>
-        ))}
-      </ul>
+      <p>I've migrated multiple organizations from legacy Active Directory to cloud-first environments, achieving secure
+        score targets above 750 and enabling remote work readiness. I've directed cross-platform hypervisor migrations
+        between VMware, Hyper-V, and open-source stacks with minimal downtime.</p>
+      <p>I built a documentation-backed process library with over 2,500 artifacts and an automation backlog that
+        reduced manual engineer effort across service desks. I've implemented Apple device management platforms,
+        designed processes around device lifecycle, and managed Docker container deployments.</p>
     </article>
   )
 }
