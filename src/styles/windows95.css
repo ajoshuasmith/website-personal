@@ -6,6 +6,8 @@
   --win95-darker: #3f3f3f;
   --win95-blue: #000080;
   --win95-highlight: #f5f5f5;
+  --tron-cyan: #00ffff;
+  --tron-cyan-glow: rgba(0, 255, 255, 0.6);
 }
 
 :root.dark-mode {
@@ -16,6 +18,8 @@
   --win95-darker: #0f0f0f;
   --win95-blue: #4a6fa5;
   --win95-highlight: #4a4a4a;
+  --tron-cyan: #00ffff;
+  --tron-cyan-glow: rgba(0, 255, 255, 0.8);
 }
 
 body {
@@ -44,9 +48,26 @@ body {
 
 .dark-mode .desktop {
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, var(--tron-cyan-glow) 1px, transparent 1px),
+    linear-gradient(var(--tron-cyan-glow) 1px, transparent 1px),
     var(--desktop-teal);
+  background-size: 28px 28px;
+  position: relative;
+}
+
+.dark-mode .desktop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(90deg, transparent 27px, var(--tron-cyan-glow) 27px, var(--tron-cyan-glow) 28px, transparent 28px),
+    linear-gradient(transparent 27px, var(--tron-cyan-glow) 27px, var(--tron-cyan-glow) 28px, transparent 28px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .taskbar {
@@ -61,7 +82,13 @@ body {
   box-shadow: 0 2px 0 var(--win95-dark) inset;
   margin-bottom: 1rem;
   flex-shrink: 0;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.dark-mode .taskbar {
+  box-shadow: 0 2px 0 var(--win95-dark) inset, 0 0 8px var(--tron-cyan-glow);
+  border-top-color: var(--tron-cyan);
 }
 
 .start-button {
@@ -127,6 +154,12 @@ body {
   opacity: 1;
 }
 
+.dark-mode .taskbar__links a:hover::after {
+  background: var(--tron-cyan);
+  box-shadow: 0 0 4px var(--tron-cyan-glow);
+  height: 2px;
+}
+
 .dark-mode-toggle {
   padding: 0.4rem 0.6rem;
   font-size: 1.1rem;
@@ -146,6 +179,15 @@ body {
 
 .dark-mode-toggle:active {
   box-shadow: inset 1px 1px 0 var(--win95-dark), inset -1px -1px 0 var(--win95-highlight);
+}
+
+.dark-mode .dark-mode-toggle {
+  border-top-color: var(--tron-cyan);
+  border-left-color: var(--tron-cyan);
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  box-shadow: inset -1px -1px 0 var(--win95-dark), inset 1px 1px 0 var(--win95-highlight), 0 0 8px var(--tron-cyan-glow);
 }
 
 @media (max-width: 900px) {

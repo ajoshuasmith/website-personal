@@ -1,6 +1,4 @@
 import About from './About'
-import Skills from './Skills'
-import Projects from './Projects'
 
 const toolbarButtons = [
   { label: 'Back', symbol: '◀' },
@@ -12,8 +10,6 @@ const toolbarButtons = [
 
 const sections = [
   { id: 'about', title: 'About', Component: About },
-  { id: 'skills', title: 'Skills & Focus', Component: Skills },
-  { id: 'projects', title: 'Recent Projects', Component: Projects },
 ]
 
 function BrowserWindow() {
