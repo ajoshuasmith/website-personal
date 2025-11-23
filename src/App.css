@@ -6,8 +6,12 @@
   border-right-color: #3f3f3f;
   border-bottom-color: #3f3f3f;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
-  max-width: 960px;
-  margin: 0 auto 3rem;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .browser-titlebar {
@@ -117,9 +121,12 @@
 }
 
 .browser-body {
-  padding: 1rem 1.25rem 1.5rem;
+  flex: 1;
+  padding: 1rem 1.25rem 1.25rem;
   background: #f4f4f4;
   border-top: 2px solid #fff;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 .browser-section {
@@ -233,5 +240,9 @@
 
   .browser-address {
     width: 100%;
+  }
+
+  .browser-body {
+    padding: 0.75rem;
   }
 }
