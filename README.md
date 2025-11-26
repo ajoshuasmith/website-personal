@@ -1,6 +1,6 @@
-# Joshua Smith - Personal Website
+# Personal Website
 
-A minimalist personal website built with React and Vite.
+A minimal personal website for my domain built with React and Vite.
 
 ## Technology
 
