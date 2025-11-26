@@ -56,7 +56,7 @@ function App() {
       </nav>
 
       <footer className="footer">
-        <p>Made with ❤️ and ☕ by Joshua.</p>
+        <p>Made with ❤️ and 🍺 by Joshua.</p>
       </footer>
     </div>
   )
