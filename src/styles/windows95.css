@@ -71,6 +71,88 @@ body {
   opacity: 0.5;
 }
 
+.dark-mode .desktop::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 28px;
+  background: var(--tron-cyan);
+  box-shadow: 
+    /* Main glow */
+    0 0 10px var(--tron-cyan),
+    0 0 20px var(--tron-cyan),
+    /* Trail behind */
+    -14px 0 0 2px var(--tron-cyan),
+    -14px 0 8px var(--tron-cyan),
+    -28px 0 0 2px var(--tron-cyan),
+    -28px 0 8px var(--tron-cyan),
+    -42px 0 0 2px var(--tron-cyan),
+    -42px 0 8px var(--tron-cyan),
+    -56px 0 0 2px var(--tron-cyan),
+    -56px 0 8px var(--tron-cyan),
+    /* Bike front/back extensions */
+    0 -10px 0 6px var(--tron-cyan),
+    0 -10px 0 6px var(--tron-cyan-glow),
+    0 18px 0 6px var(--tron-cyan),
+    0 18px 0 6px var(--tron-cyan-glow);
+  border-radius: 3px;
+  pointer-events: none;
+  z-index: 1;
+  animation: lightcycle 25s linear infinite;
+}
+
+@keyframes lightcycle {
+  0% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(0deg);
+  }
+  12% {
+    top: 15%;
+    left: 45%;
+    transform: rotate(0deg);
+  }
+  17% {
+    top: 15%;
+    left: 45%;
+    transform: rotate(90deg);
+  }
+  29% {
+    top: 45%;
+    left: 45%;
+    transform: rotate(90deg);
+  }
+  34% {
+    top: 45%;
+    left: 45%;
+    transform: rotate(180deg);
+  }
+  46% {
+    top: 45%;
+    left: 5%;
+    transform: rotate(180deg);
+  }
+  51% {
+    top: 45%;
+    left: 5%;
+    transform: rotate(270deg);
+  }
+  63% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(270deg);
+  }
+  68% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(360deg);
+  }
+  100% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(360deg);
+  }
+}
 
 .taskbar {
   min-height: 48px;

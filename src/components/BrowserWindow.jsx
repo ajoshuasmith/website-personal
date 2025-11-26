@@ -45,12 +45,22 @@ function BrowserWindow() {
         </label>
       </div>
 
+      <div className="browser-tabs">
+        {sections.map((section) => (
+          <a key={section.id} href={`#${section.id}`} className="browser-tab">
+            {section.title}
+          </a>
+        ))}
+      </div>
 
       <div className="browser-body">
         {sections.map((section) => {
           const { Component } = section
           return (
             <article key={section.id} id={section.id} className="browser-section">
+              <header className="browser-section__header">
+                <h2>{section.title}</h2>
+              </header>
               <Component />
             </article>
           )
