@@ -55,33 +55,8 @@ function App() {
         </a>
       </nav>
 
-      <main className="main">
-        <section className="latest-post">
-          <h2>Latest Post</h2>
-          <article className="post-preview">
-            <time className="post-date">Mar 31, 2021</time>
-            <h3>ISSessions CTF 2021 Trend BAAAAAD Command</h3>
-            <p>
-              Trend Micro - BAAAAD Command Who writes their own FTP server? Buffer overflow exploit, time to detect! 
-              We've got another set of source code, one with the vulnerability, and one without.
-            </p>
-            <a href="https://blog.ajoshuasmith.com" target="_blank" rel="noopener noreferrer" className="read-more">
-              Read more
-            </a>
-          </article>
-        </section>
-
-        <nav className="all-posts">
-          <a href="https://blog.ajoshuasmith.com" target="_blank" rel="noopener noreferrer">
-            All Posts
-          </a>
-        </nav>
-      </main>
-
       <footer className="footer">
-        <p>
-          <strong>Introduction</strong> theme for Hugo. Made with ❤️ and ☕ by open source contributors.
-        </p>
+        <p>Made with ❤️ and ☕ by Joshua.</p>
       </footer>
     </div>
   )
