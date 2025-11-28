@@ -47,7 +47,7 @@ function App() {
       </nav>
 
       <footer className="footer">
-        <p>Made with ❤️ and 🍺 by Joshua.</p>
+        <p>Made with ❤️ and <img src="/logos/redbull.gif" alt="Red Bull" width="20" height="20" style={{verticalAlign: 'middle', display: 'inline-block'}} /> by Joshua.</p>
       </footer>
     </div>
   )
