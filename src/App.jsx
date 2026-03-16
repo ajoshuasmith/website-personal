@@ -35,14 +35,23 @@ function App() {
         >
           <img src="/logos/fastmail.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
-        <a 
-          href="https://github.com/ajoshuasmith" 
-          target="_blank" 
+        <a
+          href="https://github.com/ajoshuasmith"
+          target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
           className="nav-icon"
         >
           <img src="/logos/github.png" alt="" width="24" height="24" aria-hidden="true" />
+        </a>
+        <a
+          href="https://discord.com/users/202167390048485377"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Discord"
+          className="nav-icon"
+        >
+          <img src="/logos/discord.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
       </nav>
 
