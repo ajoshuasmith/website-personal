@@ -53,6 +53,15 @@ function App() {
         >
           <img src="/logos/discord.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
+        <a
+          href="https://www.linkedin.com/in/the-joshuasmith/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="nav-icon"
+        >
+          <img src="/logos/linkedin.svg" alt="" width="24" height="24" aria-hidden="true" />
+        </a>
       </nav>
 
       <footer className="footer">
