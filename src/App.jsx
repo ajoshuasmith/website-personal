@@ -9,9 +9,18 @@ function App() {
       </header>
 
       <nav className="nav">
-        <a 
-          href="https://infosec.exchange/@joshuasmith" 
-          target="_blank" 
+        <a
+          href="https://formnode.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="FormNode"
+          className="nav-icon"
+        >
+          <img src="/logos/formnode.svg" alt="" width="24" height="24" aria-hidden="true" />
+        </a>
+        <a
+          href="https://infosec.exchange/@joshuasmith"
+          target="_blank"
           rel="me noopener noreferrer"
           aria-label="Mastodon"
           className="nav-icon"
